@@ -13,7 +13,7 @@ $ cd urlpars && npm install
 ## Running the app
 
 ```
-- .env in root folder
+-create .env in root folder
 - Create mysql database locally
 - Connect to application by specifying database url in .env
 ```
