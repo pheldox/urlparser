@@ -11,10 +11,6 @@ export class AppController {
     private readonly prisma: PrismaService
   ) { }
 
-  // @Get()
-  // getHello(){
-  //   return this.appService.getHello();
-  // }
   @UseInterceptors(CacheInterceptor)
   @Get('urls/:id')
   async urls(@Param('id') id: string) {

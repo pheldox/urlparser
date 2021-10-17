@@ -14,12 +14,9 @@ import { PrismaService } from './prisma/prisma.service';
 export class AppService {
   findId(id) {
     const { longurl } = urls.find((p) => p._id == id);  
-    Logger.log(longurl)
     return urlParse(longurl);
   }
 }
-
-
 
 async function urlParse(userurl) {
   const prisma = new PrismaClient();
@@ -34,10 +31,6 @@ async function urlParse(userurl) {
     const title = dom.window.document.querySelector('title').textContent
     const icon = dom.window.document.querySelector('link[rel*=icon]').href
     const description = dom.window.document.querySelector('meta[name*=description]').content
-
-    // res.title = title
-    // res.icon = icon
-    // res.description = description
     const savedurl = await prisma.url.findUnique({
       where : {
         longurl: userurl
