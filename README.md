@@ -7,7 +7,7 @@ The repository contain code with an endpoint that parses url and return a respon
 ## Installation of Dependencies
 
 ```bash
-$ cd urlpars && npm install
+$ cd urlparser && npm install
 ```
 
 ## Running the app
