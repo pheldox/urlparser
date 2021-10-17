@@ -54,8 +54,14 @@ $ curl localhost:5000/urls/6
 ## Response
 
 ```
-{"id":42,
+{
+  "id":42,
 "title":"MyJoyOnline.com - Ghana's most comprehensive website. Credible, fearless and independent journalism",
+
 "icon":"https://www.myjoyonline.com/wp-content/uploads/2020/03/cropped-cropped-myjoyonline-logo-2-1-32x32.png",
-"longurl":"https://www.myjoyonline.com/","description":"Ghana's most comprehensive website. Credible, fearless and independent journalism"}
+
+"longurl":"https://www.myjoyonline.com/",
+
+"description":"Ghana's most comprehensive website. Credible, fearless and independent journalism"
+}
 ```
